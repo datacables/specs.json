@@ -1,0 +1,47 @@
+{
+    "$schema": "https://mnoforms.com/specs/v1/master.schema.json",
+    "form": {
+        "fields": [
+            {
+                "name": "name",
+                "label": "Name",
+                "type": "text",
+                "required": true
+            }, {
+                "name": "gender", 
+                "label": "Gender", 
+                "type": "radio",
+                "choices": [
+                    "male", "female", "others", "not specified"
+                ]
+            }, 
+            {
+                "name": "highest_qualification", 
+                "label": "Highest Qualification in School",
+                "type": "radio",
+                "choices": [
+                    {
+                        "label": "Primary School Leaving Certificate",
+                        "value": "slc"
+                    },
+                    {
+                        "label": "High School Leaving Certificate",
+                        "value": "highschool"
+                    },
+                    {
+                        "label": "Undergraduate",
+                        "value": "undergraduate"
+                    },
+                    {
+                        "label": "Graduate",
+                        "value": "graduate"
+                    },
+                    {
+                        "label": "Post Graduate",
+                        "value": "phd"
+                    }
+                ]
+            }
+        ]
+    }
+}
