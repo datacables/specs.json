@@ -1,22 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://mnoforms.com/specs/master.schema.json",
+  "$id": "https://mnoforms.com/specs/v1/master.schema.json",
   "title": "MNO Form specification",
   "description": "The standard form definition specification for MNO Forms",
   "type": "object",
   "properties": {
-    "form": {
-      "description": "The actual form fields definition",
-      "$ref": "https://mnoforms.com/specs/form.schema.json"
-    },
-    "layout": {
-      "description": "The layout specification to render the form",
-      "$ref": "https://mnoforms.com/specs/layout.schema.json"
-    },
-    "rules": {
-        "description": "The rule specification while render the form, UI and validation",
-        "$ref": "https://mnoforms.com/specs/rule.schema.json"
-    }
+    
   },
   "required": [ "form"]
 }

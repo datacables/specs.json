@@ -3,11 +3,48 @@
     "$id": "https://mnoforms.com/specs/field.schema.json",
     "title": "mnoforms : Specification for a Form field",
     "description": "The standard form field definition specification for MNO Forms",
+    "additionalProperties": false,
     "type": "object",
     "properties": {
+        "meta": {
+            "description": "Anything extra should be added here. Let's not compromise the schema",
+            "$ref": "custom.schema.json"
+        },        
         "name": {
             "description": "The field name and key, should be machine friendly without spaces or special characters",
             "type": "string"
+        },
+        "type": {
+            "description": "The field type. The implementation of the field can be subjected to the form engine",
+            "type": "string"
+        },
+        "choices": {
+            "description": "Available choices for the field",
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "object", 
+                        "properties": {
+                            "value": {
+                                "description": "The value of the choice",
+                                "type": "string"
+                            },
+                            "label": {
+                                "description": "The display label of the choice",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "value",
+                            "label"
+                        ]
+                    }
+                ]
+            }
         },
         "label": {
             "description": "The display label. can contain spaces and special characters",
@@ -40,6 +77,10 @@
                     "type"
                 ]
             }
-        },
+        }, 
+        "extras": {
+            "description": "Extra options for the field, for the form engine to use.",
+            "type": "object"
+        }
     }
 }
