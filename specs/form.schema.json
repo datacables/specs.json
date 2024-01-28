@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://mnoforms.com/specs/form.schema.json",
+    "title": "mnoforms : Specification for Form",
+    "description": "The standard form definition specification for MNO Forms",
+    "type": "object",
+    "properties": {
+        "fields": {
+            "description": "The actual form fields definition",
+            "type": "array",
+            "items": {
+                "$ref": "field.schema.json"
+            }
+        },
+        "events": {
+            "description": "The events that the form should listen to",
+            "type": "array",
+            "items": {
+                "$ref": "event.schema.json"
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://mnoforms.com/specs/field.schema.json",
+    "title": "mnoforms : Specification for a Form field",
+    "description": "The standard form field definition specification for MNO Forms",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The field name and key, should be machine friendly without spaces or special characters",
+            "type": "string"
+        },
+        "label": {
+            "description": "The display label. can contain spaces and special characters",
+            "type": "string"
+        },
+        "required": {
+            "description": "Is this field required ?",
+            "type": "boolean"
+        },
+        "validators": {
+            "description": "List of validators to apply to this field",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "The validator type. The implementation of the validator can be subjected to the form engine",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The error message to display if the validation fails. The validator implementation can use this message or ignore it and use its own message",
+                        "type": "string"
+                    },
+                    "options": {
+                        "description": "Validator options required by the validator if any during the initialization",
+                        "type": "object"
+                    }
+                },
+                "required": [
+                    "type"
+                ]
+            }
+        },
+    }
+}
