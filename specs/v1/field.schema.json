@@ -15,8 +15,26 @@
             "type": "string"
         },
         "type": {
-            "description": "The field type. The implementation of the field can be subjected to the form engine",
+            "description": "The field type. The implementation of the field can be subjected to the form engine, hence this field should not necessarily define the HTML rendering",
             "type": "string"
+        },
+        "attributes": {
+            "description": "The data attributes other than custom validations",
+            "type": "object",
+            "properties": {
+                "is_required": {
+                    "description": "Is the field required",
+                    "type": "boolean"
+                },
+                "is_null": {
+                    "description": "Can the field have null values", 
+                    "type": "boolean"
+                },
+                "default": {
+                    "description": "The default value. @todo: how to cover differnet data types in case of default handling",
+                    "type": "string"
+                }
+            }
         },
         "choices": {
             "description": "Available choices for the field",
@@ -50,18 +68,14 @@
             "description": "The display label. can contain spaces and special characters",
             "type": "string"
         },
-        "required": {
-            "description": "Is this field required ?",
-            "type": "boolean"
-        },
         "validators": {
             "description": "List of validators to apply to this field",
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
-                    "type": {
-                        "description": "The validator type. The implementation of the validator can be subjected to the form engine",
+                    "function": {
+                        "description": "The validator function / type to be executed.  The implementation of the validator can be subjected to the form engine",
                         "type": "string"
                     },
                     "message": {
