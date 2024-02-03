@@ -24,6 +24,7 @@
         "attributes": {
             "description": "The data attributes other than custom validations",
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "is_required": {
                     "description": "Is the field required",
@@ -39,12 +40,16 @@
                 },
                 "input": {
                     "description": "The input type for the field. This is the HTML input type",
-                    "type": "enum",
+                    "type": "string",
                     "enum": [
                         "text", "number", "email", "password", "textarea", "select", "radio",
                          "checkbox", "date", "time", "datetime", "file", "hidden", "submit", "reset", 
                          "button", "range"
                     ]
+                }, 
+                "placeholder": {
+                    "description": "The placeholder text for the field",
+                    "type": "string"
                 }
             }
         },

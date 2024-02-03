@@ -7,7 +7,7 @@
                 "label": "Name",
                 "type": "text",
                 "attributes": {
-                    "required": true
+                    "is_required": true
                 }
             }, {
                 "name": "gender", 
@@ -15,7 +15,13 @@
                 "type": "text",
                 "choices": [
                     "male", "female", "others", "not specified"
-                ]
+                ], 
+                "attributes": {
+                    "is_required": true,
+                    "is_null": false,
+                    "placeholder": "Please specify your gender",
+                    "input": "radio"
+                }
             }, 
             {
                 "name": "highest_qualification", 
