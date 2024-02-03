@@ -6,7 +6,9 @@
                 "name": "name",
                 "label": "Name",
                 "type": "text",
-                "required": true
+                "attributes": {
+                    "required": true
+                }
             }, {
                 "name": "gender", 
                 "label": "Gender", 
