@@ -7,7 +7,7 @@
   "properties": {
     "meta": {
         "description": "Anything extra should be added here. Let's not compromise the schema",
-        "$ref": "custom.schema.json"
+        "$ref": "https://standards.mnoforms.com/specs/v1/custom.schema.json"
     }, 
     "extras": {
         "description": "Extra options for the layout, for the form engine to use.",

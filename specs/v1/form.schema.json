@@ -8,25 +8,25 @@
     "properties": {
         "meta": {
             "description": "Anything extra should be added here. Let's not compromise the schema",
-            "$ref": "custom.schema.json"
+            "$ref": "https://standards.mnoforms.com/specs/v1/custom.schema.json"
         },
         "fields": {
             "description": "The actual form fields definition",
             "type": "array",
             "items": {
-                "$ref": "field.schema.json"
+                "$ref": "https://standards.mnoforms.com/specs/v1/field.schema.json"
             }
         },
         "events": {
             "description": "The events that the form should listen to",
             "type": "array",
             "items": {
-                "$ref": "event.schema.json"
+                "$ref": "https://standards.mnoforms.com/specs/v1/event.schema.json"
             }
         }, 
         "extras": {
             "description": "Extra options for the form, for the form engine to use.",
-            "$ref": "custom.schema.json"
+            "$ref": "https://standards.mnoforms.com/specs/v1/custom.schema.json"
         }
     }
 }

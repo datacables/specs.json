@@ -8,23 +8,23 @@
   "properties": {
     "meta": {
       "description": "Anything meta should be added here. Let's not compromise the schema",
-      "$ref": "custom.schema.json"
+      "$ref": "https://standards.mnoforms.com/specs/v1/custom.schema.json"
     },
     "form": {
       "description": "The actual form fields definition",
-      "$ref": "form.schema.json"
+      "$ref": "https://standards.mnoforms.com/specs/v1/form.schema.json"
     },
     "layout": {
       "description": "The layout specification to render the form",
-      "$ref": "layout.schema.json"
+      "$ref": "https://standards.mnoforms.com/specs/v1/layout.schema.json"
     },
     "rules": {
         "description": "The rule specification while render the form, UI and validation",
-        "$ref": "rule.schema.json"
+        "$ref": "https://standards.mnoforms.com/specs/v1/rule.schema.json"
     }, 
     "extras": {
       "description": "Anything extra should be added here. Let's not compromise the schema",
-      "$ref": "custom.schema.json"
+      "$ref": "https://standards.mnoforms.com/specs/v1/custom.schema.json"
     }
   },
   "required": [ "form"]
