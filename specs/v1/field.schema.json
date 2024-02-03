@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://mnoforms.com/specs/field.schema.json",
+    "$id": "https://standards.mnoforms.com/specs/field.schema.json",
     "title": "mnoforms : Specification for a Form field",
     "description": "The standard form field definition specification for MNO Forms",
     "additionalProperties": false,

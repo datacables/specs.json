@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://mnoforms.com/specs/v1/master.schema.json",
+  "$id": "https://standards.mnoforms.com/specs/v1/master.schema.json",
   "title": "MNO Form specification",
   "description": "The standard form definition specification for MNO Forms",
   "type": "object",
