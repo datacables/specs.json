@@ -12,7 +12,7 @@
             }, {
                 "name": "gender", 
                 "label": "Gender", 
-                "type": "radio",
+                "type": "text",
                 "choices": [
                     "male", "female", "others", "not specified"
                 ]
@@ -20,7 +20,7 @@
             {
                 "name": "highest_qualification", 
                 "label": "Highest Qualification in School",
-                "type": "radio",
+                "type": "text",
                 "choices": [
                     {
                         "label": "Primary School Leaving Certificate",

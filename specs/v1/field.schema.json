@@ -15,10 +15,10 @@
             "type": "string"
         },
         "type": {
-            "description": "The field type. The implementation of the field can be subjected to the form engine, hence this field should not necessarily define the HTML rendering",
+            "description": "The field type (datatype) and NOT THE HTML input type. The implementation of the field can be subjected to the form engine, hence this field should not necessarily define the HTML rendering",
             "default": "string",
             "enum": [
-                
+                "text", "number", "email", "date", "time", "datetime", "url", "color", "range"
             ]
         },
         "attributes": {
@@ -36,6 +36,15 @@
                 "default": {
                     "description": "The default value. @todo: how to cover differnet data types in case of default handling",
                     "type": "string"
+                },
+                "input": {
+                    "description": "The input type for the field. This is the HTML input type",
+                    "type": "enum",
+                    "enum": [
+                        "text", "number", "email", "password", "textarea", "select", "radio",
+                         "checkbox", "date", "time", "datetime", "file", "hidden", "submit", "reset", 
+                         "button", "range"
+                    ]
                 }
             }
         },
