@@ -1,2 +1,15 @@
+asgiref==3.7.2
+attrs==23.2.0
+certifi==2024.2.2
+charset-normalizer==3.3.2
+Django==5.0.1
+idna==3.6
+jsoncparser==1.1.0
 jsonschema==4.21.1
-
+jsonschema-specifications==2023.12.1
+referencing==0.33.0
+requests==2.31.0
+rpds-py==0.17.1
+sqlparse==0.4.4
+typing_extensions==4.9.0
+urllib3==2.2.0
