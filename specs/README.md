@@ -15,3 +15,12 @@ This folder will contain the specifications for the form definition
 - A standard schema for mnoforms-json shall be made as per the json-schema standards
 - The Schema will adhere to JSON Schema version 2020-12!
 
+
+
+# To be looked into
+JSONSchema
+  "contentEncoding": "base64",
+  "contentMediaType": "image/png"
+
+
+

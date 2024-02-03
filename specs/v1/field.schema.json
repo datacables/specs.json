@@ -16,7 +16,10 @@
         },
         "type": {
             "description": "The field type. The implementation of the field can be subjected to the form engine, hence this field should not necessarily define the HTML rendering",
-            "type": "string"
+            "default": "string",
+            "enum": [
+                
+            ]
         },
         "attributes": {
             "description": "The data attributes other than custom validations",
