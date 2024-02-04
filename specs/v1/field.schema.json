@@ -59,7 +59,6 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-
                 "input": {
                     "description": "The input type for the field. This is the HTML input type",
                     "type": "string",
@@ -131,13 +130,13 @@
                         "description": "The error message to display if the validation fails. The validator implementation can use this message or ignore it and use its own message",
                         "type": "string"
                     },
-                    "options": {
-                        "description": "Validator options required by the validator if any during the initialization",
+                    "params": {
+                        "description": "Validator parameters required by the validator if any during the initialization",
                         "type": "object"
                     }
                 },
                 "required": [
-                    "type"
+                    "function"
                 ]
             }
         },

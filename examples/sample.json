@@ -59,6 +59,26 @@
                 "choices": [
                     "employed", "unemployed", "student", "retired"
                 ]
+            },
+            {
+                "name": "linkedin",
+                "label": "LinkedIn Profile",
+                "type": "text",
+                "attributes": {
+                    "is_required": true
+                },
+                "render": {
+                    "placeholder": "Please provide your LinkedIn profile URL"
+                },
+                "validators": [
+                    {
+                        "function": "regex",
+                        "message": "Please provide a valid LinkedIn profile URL",
+                        "params": {
+                            "pattern": "^(https?://)?(www\\.)?linkedin\\.com/in/([a-zA-Z0-9-]+)"
+                        }
+                    }
+                ]
             }
         ]
     }
