@@ -8,17 +8,31 @@
     "properties": {
         "meta": {
             "description": "Anything extra should be added here. Let's not compromise the schema",
-            "$ref": "https://standards.mnoforms.com/specs/v1/custom.schema.json"
-        },        
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {}
+        },
         "name": {
             "description": "The field name and key, should be machine friendly without spaces or special characters",
+            "type": "string"
+        },
+        "label": {
+            "description": "The display label. can contain spaces and special characters",
             "type": "string"
         },
         "type": {
             "description": "The field type (datatype) and NOT THE HTML input type. The implementation of the field can be subjected to the form engine, hence this field should not necessarily define the HTML rendering",
             "default": "string",
             "enum": [
-                "text", "number", "email", "date", "time", "datetime", "url", "color", "range"
+                "text",
+                "number",
+                "email",
+                "date",
+                "time",
+                "datetime",
+                "url",
+                "color",
+                "range"
             ]
         },
         "attributes": {
@@ -31,7 +45,7 @@
                     "type": "boolean"
                 },
                 "is_null": {
-                    "description": "Can the field have null values", 
+                    "description": "Can the field have null values",
                     "type": "boolean"
                 },
                 "default": {
@@ -42,11 +56,25 @@
                     "description": "The input type for the field. This is the HTML input type",
                     "type": "string",
                     "enum": [
-                        "text", "number", "email", "password", "textarea", "select", "radio",
-                         "checkbox", "date", "time", "datetime", "file", "hidden", "submit", "reset", 
-                         "button", "range"
+                        "text",
+                        "number",
+                        "email",
+                        "password",
+                        "textarea",
+                        "select",
+                        "radio",
+                        "checkbox",
+                        "date",
+                        "time",
+                        "datetime",
+                        "file",
+                        "hidden",
+                        "submit",
+                        "reset",
+                        "button",
+                        "range"
                     ]
-                }, 
+                },
                 "placeholder": {
                     "description": "The placeholder text for the field",
                     "type": "string"
@@ -62,7 +90,7 @@
                         "type": "string"
                     },
                     {
-                        "type": "object", 
+                        "type": "object",
                         "properties": {
                             "value": {
                                 "description": "The value of the choice",
@@ -80,10 +108,6 @@
                     }
                 ]
             }
-        },
-        "label": {
-            "description": "The display label. can contain spaces and special characters",
-            "type": "string"
         },
         "validators": {
             "description": "List of validators to apply to this field",
@@ -108,10 +132,16 @@
                     "type"
                 ]
             }
-        }, 
+        },
         "extras": {
             "description": "Extra options for the field, for the form engine to use.",
-            "type": "object"
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {}
         }
-    }
+    },
+    "required": [
+        "name",
+        "type"
+    ]
 }

@@ -3,7 +3,7 @@
     "$id": "https://standards.mnoforms.com/specs/v1/custom.schema.json",
     "title": "MNO Form Custom Data specification",
     "description": "The custom fields should have following structure",
-    "additionalProperties": false,  
+    "additionalProperties": true,  
     "type": "object",
     "properties": {
     },

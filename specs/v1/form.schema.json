@@ -8,7 +8,10 @@
     "properties": {
         "meta": {
             "description": "Anything extra should be added here. Let's not compromise the schema",
-            "$ref": "https://standards.mnoforms.com/specs/v1/custom.schema.json"
+            "type": "object", 
+            "additionalProperties": true, 
+            "properties": {
+            }
         },
         "fields": {
             "description": "The actual form fields definition",
@@ -26,7 +29,10 @@
         }, 
         "extras": {
             "description": "Extra options for the form, for the form engine to use.",
-            "$ref": "https://standards.mnoforms.com/specs/v1/custom.schema.json"
+            "type": "object", 
+            "additionalProperties": true, 
+            "properties": {
+            }
         }
     }
 }

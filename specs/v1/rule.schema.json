@@ -3,9 +3,8 @@
   "$id": "https://standards.mnoforms.com/specs/v1/master.schema.json",
   "title": "MNO Form specification",
   "description": "The standard form definition specification for MNO Forms",
-  "type": "object",
-  "properties": {
-    
-  },
-  "required": [ "form"]
+  "type": "object", 
+            "additionalProperties": true, 
+            "properties": {
+            }
 }
