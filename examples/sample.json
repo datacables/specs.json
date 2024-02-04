@@ -51,6 +51,14 @@
                         "value": "phd"
                     }
                 ]
+            }, 
+            {
+                "name": "occupation_status",
+                "label": "Occupation Status",
+                "type": "text",
+                "choices": [
+                    "employed", "unemployed", "student", "retired"
+                ]
             }
         ]
     }
