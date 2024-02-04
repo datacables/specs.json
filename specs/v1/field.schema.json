@@ -35,6 +35,10 @@
                 "range"
             ]
         },
+        "default": {
+            "description": "The default value. @todo: how to cover differnet data types in case of default handling",
+            "type": "string"
+        },
         "attributes": {
             "description": "The data attributes other than custom validations",
             "type": "object",
@@ -47,11 +51,15 @@
                 "is_null": {
                     "description": "Can the field have null values",
                     "type": "boolean"
-                },
-                "default": {
-                    "description": "The default value. @todo: how to cover differnet data types in case of default handling",
-                    "type": "string"
-                },
+                }
+            }
+        },
+        "render": {
+            "description": "The rendering options for the field",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+
                 "input": {
                     "description": "The input type for the field. This is the HTML input type",
                     "type": "string",

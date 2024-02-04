@@ -18,7 +18,9 @@
                 ], 
                 "attributes": {
                     "is_required": true,
-                    "is_null": false,
+                    "is_null": false
+                }, 
+                "render": {
                     "placeholder": "Please specify your gender",
                     "input": "radio"
                 }
