@@ -15,7 +15,7 @@ This separation enables seamless communication between data storage systems, API
 
 ### Founder's Belief: Isolated and Asynchronous Communication
 The Datacables schema is heavily influenced by the founder's belief in promoting loosely coupled and asynchronous communication within software systems. 
-[Details explained here - PRINCIPLE.md](PRINCIPLE.md)
+[Details explained here - PRINCIPLE.md](.project/docs/PRINCIPLE.md)
 
 ### Core Concepts
 
