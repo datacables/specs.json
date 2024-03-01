@@ -10,7 +10,7 @@ from referencing.typing import URI
 
 RESOLVE_LOCALLY = True
 schema_file = "../../specs/v1/master.schema.json"
-json_file = "../../examples/sample.json"
+json_file = "../../examples/sample.cable.json"
 
 @referencing.retrieval.to_cached_resource()
 def mno_retreiver(url):
