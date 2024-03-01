@@ -55,13 +55,13 @@ These properties are kept for the higher portability scope of the communication 
 {
   "$schema": "...",
   "$id": "...",
-  "title"a standard communication cable specification",
+  "title" : "a standard communication cable specification",
   "description": "...",
   "type": "object",
   "properties": {
-    "meta": { ... },
-    "form": { "$ref": "..." },
-    "extras": { ... }
+    "meta": {  },
+    "form": { "$ref": "https://standards.mnoforms.com/specs/v1/form.schema.json" },
+    "extras": {  }
   },
   "required": ["form"]
 }
@@ -77,12 +77,12 @@ These properties are kept for the higher portability scope of the communication 
   "description": "...",
   "type": "object",
   "properties": {
-    "meta": { ... },
+    "meta": {  },
     "fields": {
       "type": "array",
       "items": { "$ref": "https://standards.mnoforms.com/specs/v1/field.schema.json" }
     },
-    "extras": { ... }
+    "extras": {  }
   }
 }
 ```
@@ -109,7 +109,7 @@ These properties are kept for the higher portability scope of the communication 
     "type": {
       "type": "string",
       "default": "string",
-      "enum": ["text", "number", "email", ...]
+      "enum": ["text", "number", "email", "..."]
     },
     "default": {
       "type": "string"
@@ -130,7 +130,7 @@ These properties are kept for the higher portability scope of the communication 
       "properties": {
         "input": {
           "type": "string",
-          "enum": ["text", "number", "email", ...]
+          "enum": ["text", "number", "email", "..."]
         },
         "placeholder": {
           "type": "string"
