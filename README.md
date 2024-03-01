@@ -21,25 +21,24 @@ The Datacables schema is heavily influenced by the founder's belief in promoting
 
 The **Datacables Specifications**  utilizes a modular approach with several key components:
 
-1. **Main Schema (`https://standards.mnoforms.com/specs/v1/master.schema.json`)**
+1. **Main Schema (`master.schema.json`)** [master.schema.json](https://standards.mnoforms.com/specs/v1/master.schema.json)
     * `master.schema.json` Defines the overall structure of a standard communication cable.
     * Includes references to sub-schemas for specific functionalities.
     * Enforces stricter validation using `additionalProperties: false`.
 
-2. **Form Schema (`https://standards.mnoforms.com/specs/v1/form.schema.json`)**
+2. **Form Schema (`form.schema.json`)** [form.schema.json](https://standards.mnoforms.com/specs/v1/form.schema.json)
     * (Terminology kept for consistency with existing schema references) Defines the actual data fields and their data types.
     * References the `field.schema.json` schema for individual field definitions.
 
-3. **Field Schema (`https://standards.mnoforms.com/specs/v1/field.schema.json`)**
+3. **Field Schema (`field.schema.json`)** [field.schema.json](https://standards.mnoforms.com/specs/v1/field.schema.json)
     * Defines the structure of individual data fields.
     * Separates data definition (`type`), and validation (`validators`).
     * Field emphasizes on the data type, but not necessarily on how it renders. HTML rendering is defined separately.
 
-4. **Layout Schema (`https://standards.mnoforms.com/specs/v1/layout.schema.json`)**
+4. **Layout Schema (`layout.schema.json`)** [layout.schema.json](https://standards.mnoforms.com/specs/v1/layout.schema.json)
     * TODO    
     
-
-5. **Rule Schema (`https://standards.mnoforms.com/specs/v1/rule.schema.json`)**
+5. **Rule Schema (`rule.schema.json`)** [rule.schema.json](https://standards.mnoforms.com/specs/v1/rule.schema.json)
     * TODO 
     * Could define rules for data transformation during serialization/deserialization but not core data structure.
 
@@ -50,7 +49,7 @@ These properties are kept for the higher portability scope of the communication 
 
 ### Schema Breakdown
 
-**Main Schema (`https://standards.mnoforms.com/specs/v1/master.schema.json`):**
+**Main Schema** [master.schema.json](specs/v1/master.schema.json)
 
 ```json
 {
@@ -68,7 +67,7 @@ These properties are kept for the higher portability scope of the communication 
 }
 ```
 
-**Form Schema (`form.schema.json`):**
+**Form Schema** [form.schema.json](specs/v1/form.schema.json)
 
 ```json
 {
@@ -88,12 +87,12 @@ These properties are kept for the higher portability scope of the communication 
 }
 ```
 
-**Field Schema (`field.schema.json`):**
+**Field Schema** [field.schema.json](specs/v1/field.schema.json)
 
 ```json
 {
-  "$schema": "[https://json-schema.org/draft/2020-12/schema](https://json-schema.org/draft/2020-12/schema)",
-  "$id": "[https://standards.mnoforms.com/specs/field.schema.json](https://standards.mnoforms.com/specs/field.schema.json)",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://standards.mnoforms.com/specs/v1/field.schema.json",
   "title": "mnoforms : Form field",
   "type": "object",
   "properties": {
