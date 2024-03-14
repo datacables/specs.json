@@ -51,6 +51,10 @@
                 "is_null": {
                     "description": "Can the field have null values",
                     "type": "boolean"
+                },
+                 "is_hidden": {
+                    "description": "Field is hidden",
+                    "type": "boolean"
                 }
             }
         },
