@@ -2,7 +2,7 @@ asgiref==3.7.2
 attrs==23.2.0
 certifi==2024.2.2
 charset-normalizer==3.3.2
-Django==5.0.1
+Django==5.0.2
 idna==3.6
 jsoncparser==1.1.0
 jsonschema==4.21.1
