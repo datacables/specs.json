@@ -131,24 +131,32 @@
                         "type": "string"
                     },
                     "params": {
-                        "description": "Validator parameters required by the validator if any during the initialization",
-                        "type": "object"
-                    }
-                },
-                "required": [
-                    "function"
-                ]
+                        "oneOf": [
+                            {
+                                "description": "(Named) Validator parameters required by the validator if any during the initialization",
+                                "type": "object"
+                            },
+                            {
+                                "description": "(Positional) Validator parameters required by the validator if any during the initialization",
+                                "type": "array"
+                            }
+                        ]
+                    },
+                    "required": [
+                        "function"
+                    ]
+                }
+            },
+            "extras": {
+                "description": "Extra options for the field, for the form engine to use.",
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {}
             }
         },
-        "extras": {
-            "description": "Extra options for the field, for the form engine to use.",
-            "type": "object",
-            "additionalProperties": true,
-            "properties": {}
-        }
-    },
-    "required": [
-        "name",
-        "type"
-    ]
+        "required": [
+            "name",
+            "type"
+        ]
+    }
 }
